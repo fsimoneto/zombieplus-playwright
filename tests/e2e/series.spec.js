@@ -60,6 +60,6 @@ test("deve realizar busca pelo termo zombie", async ({ page, request }) => {
     })
 
     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin')
-    await page.series.search(series.input)
+    await page.series.search_serie(series.input)
     await page.series.tableHave(series.outputs)
 });

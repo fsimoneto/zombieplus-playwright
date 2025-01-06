@@ -51,7 +51,7 @@ export class Series {
         await this.submit()
     }
 
-    async search(target) {
+    async search_serie(target) {
         await this.goSeries()
 
         await this.page.getByPlaceholder('Busque pelo nome')
